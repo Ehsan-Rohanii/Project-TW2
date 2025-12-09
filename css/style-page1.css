@@ -4,8 +4,13 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  color: black;
 }
 
+header {
+  padding-bottom: 1%;
+  border-bottom: 2px rgb(194, 194, 194) solid;
+}
 header > nav {
   display: flex;
   align-items: center;
@@ -20,6 +25,7 @@ header > nav > h1 {
 header > nav > .categories {
   display: flex;
   align-items: center;
+  padding: 5px;
 }
 header > nav > .categories > i {
   font-size: 24px;
@@ -30,7 +36,7 @@ header > nav > .search-box {
   position: relative;
 }
 header > nav > .search-box > input {
-  padding: 15px 5px;
+  padding: 12px 5px;
   border-radius: 50px;
   width: 100%;
   font-size: 17px;
@@ -44,6 +50,7 @@ header > nav > .search-box > .search-icon {
   background-color: chocolate;
   border-radius: 50px;
   padding: 5px 9px;
+  cursor: pointer;
 }
 header > nav > .search-box > .search-icon > i {
   margin-top: 3px;
@@ -51,20 +58,77 @@ header > nav > .search-box > .search-icon > i {
 header > nav > .sign-in {
   margin-left: 1%;
   font-size: 18px;
+  padding: 8px 12px;
 }
 header > nav > span > i {
   font-size: 26px;
+  padding: 5px;
 }
 header > nav .categories:hover,
 header > nav span:hover {
   background-color: rgb(194, 194, 194);
   border-radius: 30px;
-  padding: 5px;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 header > nav .sign-in:hover {
   background-color: rgb(194, 194, 194);
   border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+header > div > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+header > div > ul > li {
+  margin: 0 1%;
+}
+header > div > ul > li > a {
+  padding: 8px 12px;
+}
+header > div > ul > li > a > i {
+  font-size: 18px;
+}
+header > div > ul li > a:hover {
+  background-color: rgb(194, 194, 194);
+  border-radius: 30px;
+  transition: all 0.7s ease;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+footer > .foot-div1 {
+  text-align: center;
+  padding: 2% 0;
+  background-color: rgb(195, 224, 255);
+}
+footer > .foot-div1 > .search-box2 {
+  width: 40%;
+  margin: 1% auto;
+  position: relative;
+}
+footer > .foot-div1 > .search-box2 > input {
+  padding: 12px 5px;
+  border: 1px solid gray;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 17px;
+}
+footer > .foot-div1 > .search-box2 > .subscribe-button {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  border-radius: 50px;
   padding: 8px 12px;
   cursor: pointer;
+}
+footer > .foot-div2 {
+  text-align: center;
+  background-color: royalblue;
+  padding: 2%;
 }/*# sourceMappingURL=style-page1.css.map */
