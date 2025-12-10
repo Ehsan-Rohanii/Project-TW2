@@ -151,6 +151,7 @@ footer {
             }
 
             >.search-box2 {
+                width: 70%;
                 margin: 1% auto;
 
                 >input {
@@ -197,6 +198,29 @@ footer {
 
             >.foot-div4-d2>ul>li {
                 margin-right: 5px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:700px) {
+    footer {
+        >.foot-div1 {
+            padding: 2% 0;
+            >p {
+                font-size: 14px;
+            }
+
+            >.search-box2 {
+                width: 70%;
+                margin: 1% auto;
+
+                >input {
+                    padding: 12px 5px;
+                    font-size: 12px;
+                }
+                >.subscribe-button {
+                    font-size: 14px;
+                }
             }
         }
     }

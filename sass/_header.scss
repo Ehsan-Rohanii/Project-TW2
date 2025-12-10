@@ -165,7 +165,9 @@ header {
                     }
                 }
             }
-
+            >.gift-icon {
+                display: none;
+            }
             .sign-in {
                 margin-left: 0%;
                 font-size: 14px;
@@ -191,18 +193,18 @@ header {
         gap: 3px;
         >h1 {
             font-size: 28px;
+            margin-left: 3px;
         }
         >.categories {
             >.hambergeri  {
                 width: 170px;
             }
         }
+        
         >.sign-in {
-            font-size: 14px;
+            font-size: 12px;
             padding: 2px 2px;
-            width: 10%;
-            margin: 0;
-            
+            width: 12%;
         }
 
         >span {
@@ -212,7 +214,7 @@ header {
             }
         }
         >.search-box {
-            width: 45%;
+            width: 40%;
             position: relative;
 
             >input {
