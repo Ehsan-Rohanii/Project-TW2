@@ -10,6 +10,7 @@
 header {
   padding-bottom: 1%;
   border-bottom: 2px rgb(194, 194, 194) solid;
+  margin-bottom: 700px;
 }
 header > nav {
   display: flex;
@@ -54,6 +55,7 @@ header > nav > .search-box > .search-icon {
 }
 header > nav > .search-box > .search-icon > i {
   margin-top: 3px;
+  color: white;
 }
 header > nav > .sign-in {
   margin-left: 1%;
@@ -131,4 +133,59 @@ footer > .foot-div2 {
   text-align: center;
   background-color: royalblue;
   padding: 2%;
+}
+footer > .foot-div3 {
+  display: flex;
+  background-color: blue;
+  height: 50vh;
+}
+footer > .foot-div3 > .foot-div3-d1 {
+  width: 30vw;
+  height: 100%;
+  background-color: darkblue;
+  margin-left: 50px;
+  position: relative;
+}
+footer > .foot-div3 > .foot-div3-d1 > div {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer > .foot-div3 > .foot-div3-d1 > div > .p {
+  background-color: chocolate;
+  margin: 0 70px;
+  border-radius: 10px;
+}
+footer > .foot-div3 > .foot-div3-d1 > div > .p > p {
+  color: white;
+  font-size: 36px;
+  padding: 20px 0px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+footer > .foot-div3 > .foot-div3-d1 > div > button {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 40px;
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+}
+footer > .foot-div3 > .foot-div3-d2 {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  gap: 180px;
+}
+footer > .foot-div3 > .foot-div3-d2 > ul > li {
+  margin: 15px 0;
+}
+footer > .foot-div3 > .foot-div3-d2 > ul > .sotial > i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+footer > .foot-div4 {
+  background-color: rgb(28, 28, 28);
 }/*# sourceMappingURL=style-page1.css.map */

@@ -1,6 +1,7 @@
 header {
     padding-bottom: 1%;
     border-bottom: 2px rgb(194, 194, 194) solid;
+    margin-bottom: 700px;
     >nav {
         display: flex;
         align-items: center;
@@ -47,9 +48,11 @@ header {
                 background-color: chocolate;
                 border-radius: 50px;
                 padding: 5px 9px;
+                
                 cursor: pointer;
                 >i {
                     margin-top: 3px;
+                    color: white;
                 }
             }
         }
