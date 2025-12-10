@@ -40,13 +40,13 @@ footer {
         display: flex;
         background-color: blue;
         height: 50vh;
-        
+
 
         >.foot-div3-d1 {
             width: 30vw;
             height: 100%;
             background-color: darkblue;
-            margin-left: 50px;
+            margin-left: 4%;
             // text-align: center;
             position: relative;
 
@@ -57,7 +57,7 @@ footer {
                 transform: translateX(-50%);
 
                 >.p {
-                    
+
                     background-color: chocolate;
                     margin: 0 70px;
                     border-radius: 10px;
@@ -68,14 +68,16 @@ footer {
                         padding: 20px 0px;
                         text-align: center;
                         margin-bottom: 30px;
-                        
+
 
                     }
 
                 }
+
                 >button {
                     border: none;
-                    padding: 15px 20px;
+                    width: 100%;
+                    padding: 15px;
                     border-radius: 40px;
                     background-color: blue;
                     color: white;
@@ -83,18 +85,22 @@ footer {
                 }
             }
         }
+
         >.foot-div3-d2 {
             width: 60%;
             display: flex;
             justify-content: center;
             margin-top: 2%;
-            gap: 180px;
-            >ul  {
-                > li {
-                margin: 15px 0;
-                
-            }
-                >.sotial>i {
+            margin-left: 5%;
+            gap: 15%;
+
+            >ul {
+                >li {
+                    margin: 15px 0;
+
+                }
+
+                >.sotial>a>i {
                     font-size: 24px;
                     margin-right: 10px;
                 }
@@ -102,7 +108,96 @@ footer {
         }
 
     }
+
     >.foot-div4 {
         background-color: rgb(28, 28, 28);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+
+        >.foot-div4-d1 {
+            margin-left: 13%;
+
+            >p {
+                color: white;
+            }
+        }
+
+        >.foot-div4-d2>ul {
+            display: flex;
+
+            >li {
+                color: white;
+                margin-right: 30px;
+
+                >a {
+                    color: white;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:900px) {
+    footer {
+        >.foot-div1 {
+            padding: 2% 0;
+            >p {
+                font-size: 14px;
+            }
+
+            >.search-box2 {
+                margin: 1% auto;
+
+                >input {
+                    padding: 12px 5px;
+                    font-size: 12px;
+                }
+
+                >.subscribe-button {
+                    font-size: 14px;
+                }
+            }
+        }
+        >.foot-div3 {
+            height: 30vh;
+
+            >.foot-div3-d1 {
+                display: none;
+            }
+
+            >.foot-div3-d2 {
+                margin-left: 22%;
+                font-size: 14px;
+
+                >ul {
+                    >li {
+                        margin: 5px 0;
+
+                    }
+
+                    >.sotial>a>i {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        >.foot-div4 {
+            font-size: 10px;
+            height: 40px;
+
+            >.foot-div4-d1 {
+                margin-left: 1%;
+            }
+
+            >.foot-div4-d2>ul>li {
+                margin-right: 5px;
+            }
+        }
     }
 }
