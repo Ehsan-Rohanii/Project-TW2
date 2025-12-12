@@ -1,0 +1,50 @@
+.sec6 {
+    width: 87%;
+    margin: 2% 6%;
+    >.sec6-div {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5 , 1fr);
+        gap: 10px;
+        >div {
+            display: flex;
+            padding: 5px;
+            border: 1px gray solid;
+            border-radius: 15px;
+            >img {
+                width: 35%;
+                border-radius: 15px;
+            }
+            >p {
+                margin-left: 5px;
+                font-size: 14px;
+                align-self: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .sec6 {
+        width: 90%;
+        margin: 5%;
+        >.sec6-div {
+            grid-template-columns: repeat(3 , 1fr);
+        }
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .sec6 {
+        width: 90%;
+        margin: 5%;
+        >.sec6-div {
+            grid-template-columns: repeat(2 , 1fr);
+            >div {
+                >p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
