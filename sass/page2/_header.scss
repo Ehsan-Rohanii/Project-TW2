@@ -1,0 +1,230 @@
+ header {
+    padding-bottom: 1%;
+    border-bottom: 2px rgb(194, 194, 194) solid;
+
+    >nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 20px;
+
+        >h1 {
+            font-size: 42px;
+            color: chocolate;
+            // margin: 0 10px;
+        }
+
+        >.categories {
+            display: flex;
+            // margin: 0 10px;
+            align-items: center;
+            padding: 5px;
+            position: relative;
+            >i {
+                font-size: 24px;
+                margin-right: 5px;
+            }
+            >.hambergeri {
+                height: 400px;
+                width: 200px;
+                overflow-y: auto;
+                background-color: rgb(223, 223, 223);
+                position: absolute;
+                top: 145%;
+                left: -15%;
+                border-radius: 20px;
+                transition: all 0.5s ease;
+                >ul>li {
+                    padding: 12px;
+                    font-size: 24px;
+                }
+                >ul>li:hover {
+                    background-color: rgb(132, 132, 132);
+                    transition: all 0.5s ease;
+                }
+            }
+            >.active-menu {
+                display: none;
+            }
+        }
+
+        >.search-box {
+            width: 55%;
+            position: relative;
+
+            >input {
+                padding: 12px 5px;
+                border-radius: 50px;
+                width: 100%;
+                // margin: 0 10px;
+                font-size: 17px;
+            }
+
+            >.search-icon {
+                position: absolute;
+                right: 4px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 24px;
+                background-color: chocolate;
+                border-radius: 50px;
+                padding: 5px 9px;
+
+                cursor: pointer;
+
+                >i {
+                    margin-top: 3px;
+                    color: white;
+                }
+            }
+
+            >.search-icon:hover {
+                transition: all 0.5s ease;
+                border-radius: 0px 50px 50px 0px;
+            }
+        }
+
+        >.sign-in {
+            margin-left: 1%;
+            font-size: 18px;
+            padding: 8px 12px;
+            // width: 8%;
+        }
+
+        >span {
+            >i {
+                font-size: 26px;
+                padding: 5px;
+                // margin: 0 12px;
+            }
+        }
+
+        .categories:hover,
+        span:hover {
+            background-color: rgb(194, 194, 194);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        .sign-in:hover {
+            background-color: rgb(194, 194, 194);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+    }
+
+    >div {
+        >ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+
+            >li {
+                margin: 0 1%;
+
+                >a {
+                    padding: 8px 12px;
+                }
+            }
+
+            >li>a>i {
+                font-size: 18px;
+            }
+
+            li>a:hover {
+                background-color: rgb(194, 194, 194);
+                border-radius: 30px;
+                transition: all 0.7s ease;
+                margin-top: 0px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:900px) {
+    header {
+        >nav {
+            gap: 10px;
+
+            >.categories {
+                >p {
+                    display: none;
+                }
+                >.hambergeri {
+                    height: 300px;
+                    >ul>li {
+                        padding: 10px;
+                        font-size: 18px;
+                    }
+                }
+            }
+            >.gift-icon {
+                display: none;
+            }
+            .sign-in {
+                margin-left: 0%;
+                font-size: 14px;
+                padding: 5px 5px;
+            }
+
+            >span {
+                >i {
+                    font-size: 22px;
+                    padding: 4px;
+                }
+            }
+        }
+
+        >div {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width:700px) {
+    header>nav {
+        gap: 3px;
+        >h1 {
+            font-size: 28px;
+            margin-left: 3px;
+        }
+        >.categories {
+            >.hambergeri  {
+                width: 170px;
+            }
+        }
+        
+        >.sign-in {
+            font-size: 12px;
+            padding: 2px 2px;
+            width: 12%;
+        }
+
+        >span {
+            >i {
+                font-size: 20px;
+                padding: 4px;
+            }
+        }
+        >.search-box {
+            width: 40%;
+            position: relative;
+
+            >input {
+                padding: 10px 5px;
+                font-size: 12px;
+            }
+
+            >.search-icon {
+                font-size: 18px;
+                padding: 3px 6px;
+            }
+        }
+    }
+}
