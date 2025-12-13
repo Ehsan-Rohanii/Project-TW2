@@ -476,90 +476,6 @@ header > div > ul li > a:hover {
     font-size: 12px;
   }
 }
-.sec5 {
-  margin: 2% 5%;
-}
-.sec5 > .sec5-div {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
-  width: 96%;
-  margin: 2%;
-}
-.sec5 > .sec5-div > .sec5-div-d {
-  position: relative;
-}
-.sec5 > .sec5-div > .sec5-div-d > img {
-  width: 100%;
-  height: 20vh;
-  border-radius: 15px;
-}
-.sec5 > .sec5-div > .sec5-div-d > div {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background-color: white;
-  color: black;
-  font-size: 14px;
-  padding: 2px 10px;
-  border-radius: 15px;
-  border: 1px solid black;
-}
-.sec5 > .sec5-div > .sec5-div-d > i {
-  position: absolute;
-  top: 5%;
-  left: 83%;
-  background-color: white;
-  border-radius: 20px;
-  padding: 6px 6px;
-  cursor: pointer;
-}
-.sec5 > .sec5-div > .sec5-div-d > .active1-heart-sec5 {
-  background-color: red;
-}
-
-@media only screen and (max-width: 1200px) {
-  .sec5 {
-    width: 90%;
-    margin: 5%;
-  }
-  .sec5 > .sec5-div {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .sec5 > .sec5-div > .sec5-div-d > img {
-    height: 35vh;
-  }
-  .sec5 > .sec5-div > .sec5-div-d > div {
-    font-size: 16px;
-    padding: 2px 6px;
-  }
-  .sec5 > .sec5-div > .sec5-div-d > i {
-    font-size: 18px;
-    left: 88%;
-    padding: 6px;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .sec5 {
-    width: 90%;
-    margin: 5%;
-  }
-  .sec5 > .sec5-div {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .sec5 > .sec5-div > .sec5-div-d > img {
-    height: 25vh;
-  }
-  .sec5 > .sec5-div > .sec5-div-d > div {
-    font-size: 12px;
-    padding: 2px 6px;
-  }
-  .sec5 > .sec5-div > .sec5-div-d > i {
-    font-size: 16px;
-    left: 80%;
-    padding: 4px;
-  }
-}
 .sec6 {
   width: 87%;
   margin: 2% 6%;
@@ -960,6 +876,64 @@ header > div > ul li > a:hover {
     font-size: 14px;
   }
 }
+.sec12 {
+  text-align: center;
+  background-color: bisque;
+  padding: 0 20%;
+}
+.sec12 > .sec12-div1 {
+  padding: 2% 0;
+}
+.sec12 > .sec12-div1 > h2 {
+  font-size: 2rem;
+}
+.sec12 > .sec12-div1 > .sec12-div1-plink {
+  cursor: pointer;
+  text-decoration: underline;
+  margin-bottom: 5%;
+}
+.sec12 > .sec12-div1 > p {
+  font-size: 18px;
+  margin: 1% 0;
+}
+.sec12 > .sec12-div1 > .sec12-duts {
+  font-size: 24px;
+  font-weight: bold;
+}
+.sec12 > .sec12-div2 {
+  text-align: start;
+  padding: 2% 0;
+}
+.sec12 > .sec12-div2 > h3 {
+  font-size: 18px;
+  color: blue;
+}
+.sec12 > .sec12-div2 > p {
+  font-size: 18px;
+  margin-top: 2%;
+}
+.sec12 > .sec12-div2 > .sec12-duts {
+  font-size: 24px;
+  font-weight: bold;
+}
+.sec12 > .sec12-div3 {
+  text-align: center;
+}
+.sec12 > .sec12-div3 > h2 {
+  margin-bottom: 2%;
+}
+.sec12 > .sec12-div3 > button {
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 40px;
+  margin-bottom: 8%;
+}
+
+@media only screen and (max-width: 900px) {
+  .sec12 {
+    padding: 0 5%;
+  }
+}
 footer > .foot-div1 {
   text-align: center;
   padding: 2% 0;
@@ -1134,5 +1108,89 @@ footer > .foot-div4 > .foot-div4-d2 > ul > li > a {
   }
   footer > .foot-div1 > .search-box2 > .subscribe-button {
     font-size: 14px;
+  }
+}
+.sec5 {
+  margin: 2% 5%;
+}
+.sec5 > .sec5-div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  width: 96%;
+  margin: 2%;
+}
+.sec5 > .sec5-div > .sec5-div-d {
+  position: relative;
+}
+.sec5 > .sec5-div > .sec5-div-d > img {
+  width: 100%;
+  height: 20vh;
+  border-radius: 15px;
+}
+.sec5 > .sec5-div > .sec5-div-d > div {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.sec5 > .sec5-div > .sec5-div-d > i {
+  position: absolute;
+  top: 5%;
+  left: 83%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 6px 6px;
+  cursor: pointer;
+}
+.sec5 > .sec5-div > .sec5-div-d > .active1-heart-sec5 {
+  background-color: red;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sec5 {
+    width: 90%;
+    margin: 5%;
+  }
+  .sec5 > .sec5-div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sec5 > .sec5-div > .sec5-div-d > img {
+    height: 35vh;
+  }
+  .sec5 > .sec5-div > .sec5-div-d > div {
+    font-size: 16px;
+    padding: 2px 6px;
+  }
+  .sec5 > .sec5-div > .sec5-div-d > i {
+    font-size: 18px;
+    left: 88%;
+    padding: 6px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .sec5 {
+    width: 90%;
+    margin: 5%;
+  }
+  .sec5 > .sec5-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sec5 > .sec5-div > .sec5-div-d > img {
+    height: 25vh;
+  }
+  .sec5 > .sec5-div > .sec5-div-d > div {
+    font-size: 12px;
+    padding: 2px 6px;
+  }
+  .sec5 > .sec5-div > .sec5-div-d > i {
+    font-size: 16px;
+    left: 80%;
+    padding: 4px;
   }
 }/*# sourceMappingURL=style-page1.css.map */
