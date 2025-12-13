@@ -32,6 +32,6 @@ const sec8Fetch = document.querySelector(".sec8-div");
             `
         })
     } catch (error) {
-        
+        console.log("Error fetching data:", error);
     }
 })();
