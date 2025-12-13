@@ -9,29 +9,35 @@
     color: #222;
   }
 
+  .doorDecor-items-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .doorDecor-items {
     background-color: #fff;
     padding: 16px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-
-      .icon-divDecor i {
-        transform: translateX(6px);
-      }
-    }
+    align-items: flex-start;
 
     img {
-      width: 180px;
-      height: 180px;
+      width: 100%; 
+      height: auto;
       object-fit: cover;
       border-radius: 12px;
       margin-bottom: 12px;
@@ -40,7 +46,7 @@
     p {
       font-size: 14px;
       color: #444;
-      text-align: center;
+      text-align: left;
       margin-bottom: 8px;
     }
 
@@ -66,6 +72,7 @@
       align-items: center;
       margin-top: 10px;
       gap: 6px;
+      cursor: pointer;
 
       span {
         font-size: 14px;
@@ -77,46 +84,33 @@
         color: #222;
         transition: transform 0.3s ease;
       }
+
+      &:hover i {
+        transform: translateX(6px);
+      }
     }
   }
 
   > div > button {
-    margin: 30px auto 0 auto;
     display: block;
-    padding: 10px 20px;
-    font-size: 15px;
+    margin: 30px auto 0 auto;
+    padding: 12px 28px;
+    font-size: 16px;
     font-weight: 600;
-    border-radius: 8px;
-    border: none;
-    background-color: #2b3b09;
     color: #fff;
+    background-color: #2b3b09;
+    border: none;
+    border-radius: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 
     &:hover {
       background-color: #1e2a07;
-    }
-  }
-  .doorDecor-items {
-    @media (max-width: 1200px) {
-      img {
-        width: 160px;
-        height: 160px;
-      }
+      transform: translateY(-2px);
     }
 
-    @media (max-width: 992px) {
-      img {
-        width: 140px;
-        height: 140px;
-      }
-    }
-
-    @media (max-width: 576px) {
-      img {
-        width: 120px;
-        height: 120px;
-      }
+    &:active {
+      transform: translateY(0);
     }
   }
 }
