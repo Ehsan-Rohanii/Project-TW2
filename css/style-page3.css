@@ -511,6 +511,59 @@ header > div > ul li > a:hover {
   transform: translateX(6px);
 }
 
+.discover-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.discover-section > a {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2b3b09;
+  text-decoration: none;
+}
+.discover-section .discoverCard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .discover-section .discoverCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .discover-section .discoverCard {
+    grid-template-columns: 1fr;
+  }
+}
+.discover-section .discoverCard .discoverCard-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.discover-section .discoverCard .discoverCard-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.discover-section .discoverCard .discoverCard-img h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  padding: 12px;
+}
+
 footer > .foot-div1 {
   text-align: center;
   padding: 2% 0;

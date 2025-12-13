@@ -1,0 +1,55 @@
+.discover-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; // 🔹 لینک وسط صفحه
+
+  > a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2b3b09;
+    text-decoration: none;
+  }
+
+  .discoverCard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr); // تبلت
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr; // موبایل
+    }
+
+    .discoverCard-img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+      }
+
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #222;
+        text-align: center;
+        padding: 12px;
+      }
+    }
+  }
+}
