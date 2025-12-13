@@ -564,6 +564,72 @@ header > div > ul li > a:hover {
   padding: 12px;
 }
 
+.giftCards-section {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 1150px;
+  width: 100%;
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+}
+@media (max-width: 992px) {
+  .giftCards-section {
+    flex-direction: column;
+  }
+}
+.giftCards-section .giftCard-container {
+  flex: 1;
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.giftCards-section .giftCard-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 12px;
+}
+.giftCards-section .giftCard-container p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 16px;
+}
+.giftCards-section .giftCard-container .giftCard-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.giftCards-section .giftCard-container .giftCard-icon span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+.giftCards-section .giftCard-container .giftCard-icon i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+.giftCards-section .giftCard-container .giftCard-icon:hover i {
+  transform: translateX(6px);
+}
+.giftCards-section .giftCard-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.giftCards-section .giftCard-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 footer > .foot-div1 {
   text-align: center;
   padding: 2% 0;
