@@ -1,1 +1,9 @@
-/*# sourceMappingURL=style-page3.css.map */
+@im * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}/*# sourceMappingURL=style-page3.css.map */
