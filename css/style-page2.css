@@ -193,25 +193,58 @@ header > div > ul li > a:hover {
   }
 }
 .title {
-  text-align: center;
+  width: 90%;
+  height: 20vh;
+  margin: 0px 50px 0px 50px;
+  position: relative;
 }
-.title > p {
+.title > h2 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
   font-size: 2em;
+  letter-spacing: 2px;
+}
+.title > .btn {
+  width: 80%;
+  height: 6vh;
+  position: absolute;
+  top: 36%;
+  left: 6px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  color: white;
+  gap: 24px;
+}
+.title > .btn > button {
+  padding: 8px 12px;
+  background-color: white;
+  border: 2px solid rgb(133, 120, 120);
+  border-radius: 18px;
+}
+.title > .btn > button > button:hover {
+  background-color: rgb(224, 215, 215);
+  cursor: pointer;
+}
+.title > .btn > button > i {
+  font-size: 18px;
 }
 
 section {
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 50px 0px 50px 0px;
+  gap: 8px;
+  margin: 0px 60px;
 }
 section > div {
   width: 22vw;
   height: 450px;
-  background-color: rgb(255, 251, 251);
   margin: 50px auto;
   position: relative;
+  transition: all 0.3s;
 }
 section > div > img {
   width: 100%;
@@ -227,7 +260,7 @@ section > div > img > .p2 {
   font-size: 0.8rem;
   color: rgb(49, 47, 47);
 }
-section > div > img > .star {
+section > div > img > .star-i {
   font-size: 0.9rem;
   position: absolute;
   right: 1%;
@@ -264,8 +297,8 @@ section > div > .heart > i {
 }
 section > div > .arrow {
   position: absolute;
-  right: 2%;
-  bottom: 23%;
+  right: 3%;
+  bottom: 24%;
   background-color: white;
   width: 12%;
   height: 8%;
@@ -278,7 +311,61 @@ section > div > .arrow > i {
 section div:hover > .heart {
   display: inline;
 }
+section div:hover > .arrow {
+  display: none;
+}
 
+@media only screen and (max-width: 900px) {
+  .title > h2 {
+    left: 34%;
+    font-size: 2rem;
+  }
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section > div {
+    width: 29vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .title > h2 {
+    left: 30%;
+    font-size: 2rem;
+  }
+  section {
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 25%;
+  }
+  section > div {
+    width: 30vw;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .title > h2 {
+    left: 18%;
+    font-size: 1.6rem;
+  }
+  section {
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 25%;
+    gap: 28px;
+    margin: auto;
+  }
+  section > div {
+    width: 40vw;
+    height: 400px;
+  }
+  section > div > .heart > i {
+    font-size: 14px;
+  }
+  section > div > .heart > .arrow {
+    padding: 8px 10px;
+  }
+  > button {
+    padding: 8px 20px;
+  }
+}
 footer > .foot-div1 {
   text-align: center;
   padding: 2% 0;
