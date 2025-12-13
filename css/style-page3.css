@@ -279,6 +279,111 @@ header > div > ul li > a:hover {
   }
 }
 
+.doorDecor-section {
+  padding: 40px 60px;
+}
+.doorDecor-section h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #222;
+}
+.doorDecor-section .doorDecor-items {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.doorDecor-section .doorDecor-items:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.doorDecor-section .doorDecor-items:hover .icon-divDecor i {
+  transform: translateX(6px);
+}
+.doorDecor-section .doorDecor-items img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.doorDecor-section .doorDecor-items p {
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.doorDecor-section .doorDecor-items span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  margin-right: 6px;
+}
+.doorDecor-section .doorDecor-items span:last-of-type {
+  margin-right: 0;
+}
+.doorDecor-section .doorDecor-items del {
+  font-size: 14px;
+  color: #999;
+  margin-right: 6px;
+}
+.doorDecor-section .doorDecor-items .icon-divDecor {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 6px;
+}
+.doorDecor-section .doorDecor-items .icon-divDecor span {
+  font-size: 14px;
+  color: #222;
+}
+.doorDecor-section .doorDecor-items .icon-divDecor i {
+  font-size: 18px;
+  color: #222;
+  transition: transform 0.3s ease;
+}
+.doorDecor-section > div > button {
+  margin: 30px auto 0 auto;
+  display: block;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  background-color: #2b3b09;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.doorDecor-section > div > button:hover {
+  background-color: #1e2a07;
+}
+@media (max-width: 1200px) {
+  .doorDecor-section .doorDecor-items img {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media (max-width: 992px) {
+  .doorDecor-section .doorDecor-items img {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media (max-width: 576px) {
+  .doorDecor-section .doorDecor-items img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 footer > .foot-div1 {
   text-align: center;
   padding: 2% 0;
