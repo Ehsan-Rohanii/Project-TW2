@@ -1,4 +1,4 @@
-@im * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -6,4 +6,365 @@
   text-decoration: none;
   color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  padding-bottom: 1%;
+  border-bottom: 2px rgb(194, 194, 194) solid;
+}
+header > nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+header > nav > h1 {
+  font-size: 42px;
+  color: chocolate;
+}
+header > nav > .categories {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+}
+header > nav > .categories > i {
+  font-size: 24px;
+  margin-right: 5px;
+}
+header > nav > .categories > .hambergeri {
+  height: 400px;
+  width: 200px;
+  overflow-y: auto;
+  background-color: rgb(223, 223, 223);
+  position: absolute;
+  top: 145%;
+  left: -15%;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+header > nav > .categories > .hambergeri > ul > li {
+  padding: 12px;
+  font-size: 24px;
+}
+header > nav > .categories > .hambergeri > ul > li:hover {
+  background-color: rgb(132, 132, 132);
+  transition: all 0.5s ease;
+}
+header > nav > .categories > .active-menu {
+  display: none;
+}
+header > nav > .search-box {
+  width: 55%;
+  position: relative;
+}
+header > nav > .search-box > input {
+  padding: 12px 5px;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 17px;
+}
+header > nav > .search-box > .search-icon {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: chocolate;
+  border-radius: 50px;
+  padding: 5px 9px;
+  cursor: pointer;
+}
+header > nav > .search-box > .search-icon > i {
+  margin-top: 3px;
+  color: white;
+}
+header > nav > .search-box > .search-icon:hover {
+  transition: all 0.5s ease;
+  border-radius: 0px 50px 50px 0px;
+}
+header > nav > .sign-in {
+  margin-left: 1%;
+  font-size: 18px;
+  padding: 8px 12px;
+}
+header > nav > span > i {
+  font-size: 26px;
+  padding: 5px;
+}
+header > nav .categories:hover,
+header > nav span:hover {
+  background-color: rgb(194, 194, 194);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+header > nav .sign-in:hover {
+  background-color: rgb(194, 194, 194);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+header > div > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+header > div > ul > li {
+  margin: 0 1%;
+}
+header > div > ul > li > a {
+  padding: 8px 12px;
+}
+header > div > ul > li > a > i {
+  font-size: 18px;
+}
+header > div > ul li > a:hover {
+  background-color: rgb(194, 194, 194);
+  border-radius: 30px;
+  transition: all 0.7s ease;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  header > nav {
+    gap: 10px;
+  }
+  header > nav > .categories > p {
+    display: none;
+  }
+  header > nav > .categories > .hambergeri {
+    height: 300px;
+  }
+  header > nav > .categories > .hambergeri > ul > li {
+    padding: 10px;
+    font-size: 18px;
+  }
+  header > nav > .gift-icon {
+    display: none;
+  }
+  header > nav .sign-in {
+    margin-left: 0%;
+    font-size: 14px;
+    padding: 5px 5px;
+  }
+  header > nav > span > i {
+    font-size: 22px;
+    padding: 4px;
+  }
+  header > div {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header > nav {
+    gap: 3px;
+  }
+  header > nav > h1 {
+    font-size: 28px;
+    margin-left: 3px;
+  }
+  header > nav > .categories > .hambergeri {
+    width: 170px;
+  }
+  header > nav > .sign-in {
+    font-size: 12px;
+    padding: 2px 2px;
+    width: 12%;
+  }
+  header > nav > span > i {
+    font-size: 20px;
+    padding: 4px;
+  }
+  header > nav > .search-box {
+    width: 40%;
+    position: relative;
+  }
+  header > nav > .search-box > input {
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+  header > nav > .search-box > .search-icon {
+    font-size: 18px;
+    padding: 3px 6px;
+  }
+}
+footer > .foot-div1 {
+  text-align: center;
+  padding: 2% 0;
+  background-color: rgb(195, 224, 255);
+}
+footer > .foot-div1 > .search-box2 {
+  width: 40%;
+  margin: 1% auto;
+  position: relative;
+}
+footer > .foot-div1 > .search-box2 > input {
+  padding: 12px 5px;
+  border: 1px solid gray;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 17px;
+}
+footer > .foot-div1 > .search-box2 > .subscribe-button {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+footer > .foot-div2 {
+  text-align: center;
+  background-color: royalblue;
+  padding: 2%;
+}
+footer > .foot-div3 {
+  display: flex;
+  background-color: blue;
+  height: 50vh;
+}
+footer > .foot-div3 > .foot-div3-d1 {
+  width: 30vw;
+  height: 100%;
+  background-color: darkblue;
+  margin-left: 4%;
+  position: relative;
+}
+footer > .foot-div3 > .foot-div3-d1 > div {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer > .foot-div3 > .foot-div3-d1 > div > .p {
+  background-color: chocolate;
+  margin: 0 70px;
+  border-radius: 10px;
+}
+footer > .foot-div3 > .foot-div3-d1 > div > .p > p {
+  color: white;
+  font-size: 36px;
+  padding: 20px 0px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+footer > .foot-div3 > .foot-div3-d1 > div > button {
+  border: none;
+  width: 100%;
+  padding: 15px;
+  border-radius: 40px;
+  background-color: blue;
+  color: white;
+  font-size: 18px;
+}
+footer > .foot-div3 > .foot-div3-d2 {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-left: 5%;
+  gap: 15%;
+}
+footer > .foot-div3 > .foot-div3-d2 > ul > li {
+  margin: 15px 0;
+}
+footer > .foot-div3 > .foot-div3-d2 > ul > .sotial > a > i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+footer > .foot-div4 {
+  background-color: rgb(28, 28, 28);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+footer > .foot-div4 > .foot-div4-d1 {
+  margin-left: 13%;
+}
+footer > .foot-div4 > .foot-div4-d1 > p {
+  color: white;
+}
+footer > .foot-div4 > .foot-div4-d2 > ul {
+  display: flex;
+}
+footer > .foot-div4 > .foot-div4-d2 > ul > li {
+  color: white;
+  margin-right: 30px;
+}
+footer > .foot-div4 > .foot-div4-d2 > ul > li > a {
+  color: white;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+  footer > .foot-div1 {
+    padding: 2% 0;
+  }
+  footer > .foot-div1 > p {
+    font-size: 14px;
+  }
+  footer > .foot-div1 > .search-box2 {
+    width: 70%;
+    margin: 1% auto;
+  }
+  footer > .foot-div1 > .search-box2 > input {
+    padding: 12px 5px;
+    font-size: 12px;
+  }
+  footer > .foot-div1 > .search-box2 > .subscribe-button {
+    font-size: 14px;
+  }
+  footer > .foot-div3 {
+    height: 30vh;
+  }
+  footer > .foot-div3 > .foot-div3-d1 {
+    display: none;
+  }
+  footer > .foot-div3 > .foot-div3-d2 {
+    margin-left: 22%;
+    font-size: 14px;
+  }
+  footer > .foot-div3 > .foot-div3-d2 > ul > li {
+    margin: 5px 0;
+  }
+  footer > .foot-div3 > .foot-div3-d2 > ul > .sotial > a > i {
+    font-size: 18px;
+  }
+  footer > .foot-div4 {
+    font-size: 10px;
+    height: 40px;
+  }
+  footer > .foot-div4 > .foot-div4-d1 {
+    margin-left: 1%;
+  }
+  footer > .foot-div4 > .foot-div4-d2 > ul > li {
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  footer > .foot-div1 {
+    padding: 2% 0;
+  }
+  footer > .foot-div1 > p {
+    font-size: 14px;
+  }
+  footer > .foot-div1 > .search-box2 {
+    width: 70%;
+    margin: 1% auto;
+  }
+  footer > .foot-div1 > .search-box2 > input {
+    padding: 12px 5px;
+    font-size: 12px;
+  }
+  footer > .foot-div1 > .search-box2 > .subscribe-button {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style-page3.css.map */
